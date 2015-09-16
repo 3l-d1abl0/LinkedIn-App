@@ -55,7 +55,7 @@ Requires :<br>
 		resources.db.params.password = "Your password"
 		resources.db.params.dbname = "Your db"
 
-	
+* Also Create a table in your Db:
 
 		CREATE TABLE lapp (
 				uid int(11) NOT NULL auto_increment,
@@ -95,4 +95,4 @@ It should be *your_custom_server/users/process*, where *your_custom_server* is t
 <br><br>
 
 
-** 	*3l-d1abl0* (Sameer Barha)**
+***3l-d1abl0* (Sameer Barha)**
