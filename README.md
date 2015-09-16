@@ -11,9 +11,7 @@ Requires :<br>
 	
 * Firstly <a href="https://www.linkedin.com/developer/apps">Register</a> your Application with LinkedIn. Get your **Client ID**(API Key) and **Client Secret**(Secret Key).
 
-* Check the appropriate permissions you need for your application. i.e <b>r_basicprofile</b>,  <b>r_emailaddress</b> etc. 
-
-Specify a valid callback url. preferably use <b>'https'</b>. <br>
+* Check the appropriate permissions you need for your application. i.e <b>r_basicprofile</b>,  <b>r_emailaddress</b> etc. Specify a valid callback url, preferably use <b>'https'</b>. <br>
 
 * Use your client ID at line 38, 98 at application/controllers/UserController.php <br>
 				```php	'client_id' => 'YOUR_CLIENT_ID' <br> 'client_id' => 'YOUR_CLIENT_ID'	```
@@ -50,6 +48,7 @@ Specify a valid callback url. preferably use <b>'https'</b>. <br>
 ###Db Setup :
    
 * Add databse setting to application.ini (application/configs/application.ini): <br>
+
 		resources.db.adapter = PDO_MYSQL
 		resources.db.params.host = localhost
 		resources.db.params.username = root
@@ -72,8 +71,8 @@ Specify a valid callback url. preferably use <b>'https'</b>. <br>
 				PRIMARY KEY (uid)
 		);
 
-* Also change the redirect_uri at line 46(UserController.php) to the redirect_uri specified at your likedin application.<br>
-It should be your_custom_server/users/process, where your_custom_server is the server name secified in Virtual Host.
+* Also change the *redirect_uri* at line 46 (UserController.php) to the *redirect_uri* specified at your likedin application.<br>
+It should be *your_custom_server/users/process*, where *your_custom_server* is the server name secified in Virtual Host.
 
 
 ###The basic overview of application:
@@ -88,12 +87,12 @@ It should be your_custom_server/users/process, where your_custom_server is the s
 
 
 ###Must Ssee Links :
-	<a href="https://developer.linkedin.com/docs/rest-api">Getting Started with the REST API</a><br>
-	<a href="https://developer.linkedin.com/docs/oauth2">Authenticating with OAuth 2.0 Guide</a><br>
-	<a href="https://developer.linkedin.com/docs/signin-with-linkedin">Sign In with LinkedIn</a><br>
-	<a href="https://developer-programs.linkedin.com/documents/code-samples">LinkedIn Code Samples</a><br>
-</p>
+[Getting Started with the REST API](https://developer.linkedin.com/docs/rest-api)<br>
+[Authenticating with OAuth 2.0 Guide](https://developer.linkedin.com/docs/oauth2)<br>
+[Sign In with LinkedIn](https://developer.linkedin.com/docs/signin-with-linkedin)<br>
+[LinkedIn Code Samples](https://developer-programs.linkedin.com/documents/code-samples)<br>
+
 <br><br>
 
 
-<b>~ 3l-d1abl0(Sameer Barha)</b>
+** 	*3l-d1abl0* (Sameer Barha)**
