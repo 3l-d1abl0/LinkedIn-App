@@ -1,4 +1,5 @@
 #A Simple LinkedIn App
+=====================
 
 A simple Linkedin app using LinkedIn api and LinkedIn OAuth2.0 to create list of users along with their details.<br>
 	It uses Php zend Framework and Mysql.<br>
@@ -14,10 +15,11 @@ Mysql >5<br>
 * Check the appropriate permissions you need for your application. i.e <b>r_basicprofile</b>, <b>r_emailaddress etc</b>.
 Specify a valid callback url. preferably use <b>'https'</b>. <br>
 
-Use your client ID at line 38, 98 at application/controllers/UserController.php <br>
+'''php	
+	Use your client ID at line 38, 98 at application/controllers/UserController.php <br>
 					'client_id' => 'YOUR_CLIENT_ID'	<br>
 					'client_id' => 'YOUR_CLIENT_ID'	<br>
-	
+'''	
 	
 
 * Use your client Secret Key at line 99 at zapp/application/controllers/UserController.php <br>
