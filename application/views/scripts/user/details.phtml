@@ -1,0 +1,22 @@
+<?php
+$this->title = "User Details";
+$this->headTitle($this->title);
+?>
+
+
+<div id="user-profile">
+	<div id="display-pic">
+		<img src="<?php echo $this->escape($this->ud['picUrl']);?>" id="opic"></img>
+	</div>
+	<div id="user-details">
+
+		<span id="holder">Name:</span> <b> <?php echo $this->escape($this->ud['fname'])."  ".$this->escape($this->ud['lname']); ?></b>	<br>
+		<span id="holder">HeadLine:</span> <?php echo $this->escape($this->ud['headline']).".";?>	<br>
+		<span id="holder">Location:</span> <?php echo $this->escape($this->ud['loc']).".";?>	<br>
+		<span id="holder">Connections:</span> <?php echo $this->escape($this->ud['conn']);?>	<br>
+		<span id="holder">LinkedIn Profile:</span> <a href="<?php echo $this->escape($this->ud['profileUrl']);?>" target="_blank" id="contact-link"> Link</a><br>
+
+		<span id="holder">Contact:</span> <a href="mailto:<?php echo $this->escape($this->ud['email'])?>" id="contact-link"><?php echo $this->escape($this->ud['email']);?></a>
+		<!-- <?php print_r($this->ud);?> -->
+	</div>
+</div>

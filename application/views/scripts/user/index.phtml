@@ -1,0 +1,16 @@
+<?php
+$this->title = "LogIn";
+$this->headTitle($this->title);
+?>
+
+
+
+<center>
+		<div id="central">
+		<b>Please Login to continue<br></b>
+		<a href="<?php echo $this->url(array('controller'=>'user',
+												'action'=>'login'));?>">
+		<img src="<?php echo $this->baseUrl().'/img/lnlogin.png'; ?>" id="login-pic"></img>
+		</a>	
+		</div>
+</center>

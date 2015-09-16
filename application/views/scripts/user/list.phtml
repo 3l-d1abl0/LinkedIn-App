@@ -1,0 +1,25 @@
+<?php
+$this->title = "User List";
+$this->headTitle($this->title);
+?>
+
+
+<div id="users-list">
+<?php foreach($this->ud as $u_details) : ?>
+
+<a href="<?php echo $this->url(array('controller'=>'user',
+'action'=>'details', 'id'=>$u_details->uid));?>">
+<div id="users-block">
+	<div id="dps">
+	<img src="<?php echo $this->escape($u_details->picUrl);?>" id="tpic"></img>
+	</div>
+	<div id="det">
+		<b> <?php echo $this->escape($u_details->fname)."  ".$this->escape($u_details->lname)."."; ?> </b>	<br>
+		 <?php echo $this->escape($u_details->headline).".";?>	<br>
+		 <?php echo $this->escape($u_details->loc).".";?>	<br>
+	</div>
+</div>
+</a>
+
+<?php endforeach; ?>
+</div>

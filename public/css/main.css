@@ -1,0 +1,100 @@
+html{
+	/*font-family: Corbel; verdana Helvetica tahoma*/
+	/*font-family: tahoma;*/
+	font-family: "Georgia", serif;
+}
+body{
+	background-color: #F5F5FF;
+}
+a{
+    /*color: #BF0720;*/
+    text-decoration: none;
+}
+#central{
+	margin-top: 10%;
+}
+
+#users-list{
+	margin-top: 20px;
+	margin-left: 370px;
+}
+
+#users-block{
+	/*display: block;*/
+	background-color: #D6D6FF;
+	width: 600px;
+	min-height: 75px
+}
+
+#users-block:hover{
+	box-shadow: 0px 0px 10px #888888;
+}
+
+#login-pic:hover{
+	box-shadow: 0px 0px 15px #888888;	
+}
+
+#dps{
+	float: left;
+	/*border: 1px dotted blue;*/
+}
+#det{
+
+	padding: 5px;
+	margin-left: 150px;
+	/*border: 1px dotted blue;*/
+	color: black;
+}
+
+#users-block{
+	margin: 10px;
+	padding: 5px;
+}
+#tpic{
+	width: 70px;
+	height: 70px;
+}
+
+
+#user-profile{
+
+	margin-top: 20px;
+	margin-left: 250px;
+	padding: 10px;
+	background-color:  #D6D6FF;
+	min-height: 500px;
+	width: 800px;
+}
+#display-pic{
+	/*border: 1px dotted blue;*/
+	float: left;
+	margin: 5px;
+}
+#opic{
+	width: 175px;
+	height: 175px;
+}
+#user-details{
+	/*border: 1px dotted blue;*/
+	margin: 5px;
+	margin-left: 250px;
+	padding: 10px;
+}
+#holder{
+	/*font-weight: bold;*/
+	font-size: 18px;
+}
+#contact-link{
+	color: #3366FF;
+}
+#contact-link:hover{
+	color: #BF0720;
+}
+
+#process-central{
+	margin-top: 200px;
+	margin-left: 350px;
+}
+#warn{
+	margin-left: 200px;
+}

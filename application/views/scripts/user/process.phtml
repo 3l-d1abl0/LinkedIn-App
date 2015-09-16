@@ -1,0 +1,40 @@
+
+	<div id="process-central">
+		
+		<span id="warn">Logged in As:</span>
+		<div id="users-block">
+			<div id="dps">
+
+			<?php 
+				echo "<img src='".$this->escape($this->ppic)."' id='tpic'> ";
+			?>
+			</div>
+			<div id="det">
+
+				<?php
+					echo '<a href="'.$this->escape($this->user_data['publicProfileUrl']).'" target="_blank" id="contact-link">'.$this->user_data['firstName'].'   '.$this->user_data['lastName'].'</a><br>'; 
+
+					echo $this->user_data['headline']."<br>";
+					echo $this->user_data['location']['name'];
+				?>
+
+			</div>
+		</div>
+		
+
+		<!--
+		//echo "Headline : ".$this->user_data['headline'];
+		///echo "LinkedIn url : ".$this->user_data['publicProfileUrl'];
+		//echo "Total Connections : ".$this->user_data['numConnections'];
+		//echo "Location : ".$this->user_data['location']['name'];
+
+		-->
+				<span id="warn">
+				<a href="<?php echo $this->url(array('controller'=>'user',
+												'action'=>'list'));?>" id="contact-link">
+					Go To User Lists
+				</a>
+				</span>
+
+	
+	</div>
