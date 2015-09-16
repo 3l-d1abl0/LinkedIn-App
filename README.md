@@ -1,5 +1,4 @@
 #A Simple LinkedIn App
-=====================
 
 A simple Linkedin app using LinkedIn api and LinkedIn OAuth2.0 to create list of users along with their details.<br>
 	It uses Php zend Framework and Mysql.<br>
@@ -15,27 +14,23 @@ Mysql >5<br>
 * Check the appropriate permissions you need for your application. i.e <b>r_basicprofile</b>, <b>r_emailaddress etc</b>.
 Specify a valid callback url. preferably use <b>'https'</b>. <br>
 
-'''php	
-	Use your client ID at line 38, 98 at application/controllers/UserController.php <br>
-					'client_id' => 'YOUR_CLIENT_ID'	<br>
-					'client_id' => 'YOUR_CLIENT_ID'	<br>
-'''	
+* Use your client ID at line 38, 98 at application/controllers/UserController.php <br>
+				```php	'client_id' => 'YOUR_CLIENT_ID' <br> 'client_id' => 'YOUR_CLIENT_ID'	```
 	
 
 * Use your client Secret Key at line 99 at zapp/application/controllers/UserController.php <br>
-				'client_secret' => 'YOUR_SECRET_API_KEY' 	
+			```php	'client_secret' => 'YOUR_SECRET_API_KEY' 	```
 	
 
 * Also set the proper scope at line 41 according to the permissions specified in your registered LinkedIn app.<br>
-				'scope' => 'r_basicprofile r_emailaddress'
+			```php	'scope' => 'r_basicprofile r_emailaddress'	```
 	
 	
 
-	<h3>Your Virtual host setup:</h3>
+###Your Virtual host setup:
 
-	setup  a virtual host and a server name for redirect Url to which linkedin app will return.
-	</p>
-	'''
+* Setup  a virtual host and a server name for redirect Url to which linkedin app will return.<br>
+	```html
 	<VirtualHost *:80>
         ServerName your_custom_server
         DocumentRoot path/to/thisapp/public
@@ -49,9 +44,9 @@ Specify a valid callback url. preferably use <b>'https'</b>. <br>
             Allow from all
         </Directory>
     </VirtualHost>
-    '''
-   <p>
-    <h3>Db Setup : </h3>
+    ```
+
+###Db Setup :
    
     * Add databse setting to application.ini (application/configs/application.ini)
 		resources.db.adapter = PDO_MYSQL
