@@ -55,3 +55,6 @@ class Application_Model_DbTable_Linkedin extends Zend_Db_Table_Abstract
 
 }
 
+/*
+	https://github.com/3l-d1abl0
+*/
