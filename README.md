@@ -1,17 +1,18 @@
 #A Simple LinkedIn App
 
-A simple Linkedin app using LinkedIn api and LinkedIn OAuth2.0 to create list of users along with their details.<br>
-	It uses Php zend Framework and Mysql.<br>
+A simple Linkedin app using LinkedIn api and LinkedIn OAuth2.0 to create list of users along with their details.
+It uses Php zend Framework and Mysql.<br>
 
 Requires :<br>
-Php >5<br>
-Zend Framework 1.12<br>
-Mysql >5<br>
+**Php >5**<br>
+**Zend Framework 1.12**<br>
+**Mysql >5**<br>
 
 	
-* Firstly <a href="https://www.linkedin.com/developer/apps">Register</a> your Application with LinkedIn. Get your <b>Client ID</b>(API Key) and <b>Client Secret</b>(Secret Key).
+* Firstly <a href="https://www.linkedin.com/developer/apps">Register</a> your Application with LinkedIn. Get your **Client ID**(API Key) and **Client Secret**(Secret Key).
 
-* Check the appropriate permissions you need for your application. i.e <b>r_basicprofile</b>, <b>r_emailaddress etc</b>.
+* Check the appropriate permissions you need for your application. i.e <b>r_basicprofile</b>,  <b>r_emailaddress</b> etc. 
+
 Specify a valid callback url. preferably use <b>'https'</b>. <br>
 
 * Use your client ID at line 38, 98 at application/controllers/UserController.php <br>
@@ -48,7 +49,7 @@ Specify a valid callback url. preferably use <b>'https'</b>. <br>
 
 ###Db Setup :
    
-    * Add databse setting to application.ini (application/configs/application.ini)
+* Add databse setting to application.ini (application/configs/application.ini): <br>
 		resources.db.adapter = PDO_MYSQL
 		resources.db.params.host = localhost
 		resources.db.params.username = root
@@ -71,13 +72,13 @@ Specify a valid callback url. preferably use <b>'https'</b>. <br>
 				PRIMARY KEY (uid)
 		);
 
-	* Also change the redirect_uri at line 46(UserController.php) to the redirect_uri specified at your likedin application.<br>
-	It should be your_custom_server/users/process, where your_custom_server is the server name secified in Virtual Host.
+* Also change the redirect_uri at line 46(UserController.php) to the redirect_uri specified at your likedin application.<br>
+It should be your_custom_server/users/process, where your_custom_server is the server name secified in Virtual Host.
 
 
-	<h3>The basic overview of application:</h3>
+###The basic overview of application:
 
-	*	Application works on the controller 'user' having several actions, namely:
+*	Application works on the controller 'user' having several actions, namely:
 
 		user/index  -> Presents a login Screen for Logging via Linked Account.<br>
 		user/login  -> Requests for an authorization code as per LinkedIn API.<br>
@@ -86,7 +87,7 @@ Specify a valid callback url. preferably use <b>'https'</b>. <br>
 		user/details -> handles the requests for user details.<br>
 
 
-	<h3>Must Ssee Links : </h3>
+###Must Ssee Links :
 	<a href="https://developer.linkedin.com/docs/rest-api">Getting Started with the REST API</a><br>
 	<a href="https://developer.linkedin.com/docs/oauth2">Authenticating with OAuth 2.0 Guide</a><br>
 	<a href="https://developer.linkedin.com/docs/signin-with-linkedin">Sign In with LinkedIn</a><br>
