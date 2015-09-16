@@ -1,6 +1,5 @@
 <h1>A Simple LinkedIn App</h1>
 
-<p>
 	A simple Linkedin app using LinkedIn api and LinkedIn OAuth2.0 to create list of users along with their details.
 	It uses Php zend Framework and Mysql.
 
@@ -90,7 +89,7 @@
 	<a href="https://developer.linkedin.com/docs/oauth2">Authenticating with OAuth 2.0 Guide</a>
 	<a href="https://developer.linkedin.com/docs/signin-with-linkedin">Sign In with LinkedIn</a>
 	<a href="https://developer-programs.linkedin.com/documents/code-samples">LinkedIn Code Samples</a>
-</p>
+
 <br><br>
 
 
