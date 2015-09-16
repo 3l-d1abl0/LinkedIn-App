@@ -86,7 +86,7 @@ It should be *your_custom_server/users/process*, where *your_custom_server* is t
 		user/details -> handles the requests for user details.<br>
 
 
-###Must Ssee Links :
+###Must See Links :
 [Getting Started with the REST API](https://developer.linkedin.com/docs/rest-api)<br>
 [Authenticating with OAuth 2.0 Guide](https://developer.linkedin.com/docs/oauth2)<br>
 [Sign In with LinkedIn](https://developer.linkedin.com/docs/signin-with-linkedin)<br>
