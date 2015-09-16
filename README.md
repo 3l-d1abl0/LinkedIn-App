@@ -1,6 +1,6 @@
 <h1>A Simple LinkedIn App</h1>
 
-
+<p>
 	A simple Linkedin app using LinkedIn api and LinkedIn OAuth2.0 to create list of users along with their details.<br>
 	It uses Php zend Framework and Mysql.<br>
 
@@ -50,7 +50,7 @@
         </Directory>
     </VirtualHost>
     '''
-   
+   <p>
     <h3>Db Setup : </h3>
    
     * Add databse setting to application.ini (application/configs/application.ini)
@@ -96,7 +96,7 @@
 	<a href="https://developer.linkedin.com/docs/oauth2">Authenticating with OAuth 2.0 Guide</a><br>
 	<a href="https://developer.linkedin.com/docs/signin-with-linkedin">Sign In with LinkedIn</a><br>
 	<a href="https://developer-programs.linkedin.com/documents/code-samples">LinkedIn Code Samples</a><br>
-
+</p>
 <br><br>
 
 
