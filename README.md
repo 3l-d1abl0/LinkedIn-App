@@ -10,29 +10,31 @@
 	Mysql >5<br>
 
 	<br><br><br>
+	<ul>
+	<li>Firstly <a href="https://www.linkedin.com/developer/apps">Register</a> your Application with LinkedIn. Get your <b>Client ID</b>(API Key) and <b>Client Secret</b>(Secret Key).</li>
 
-	Firstly <a href="https://www.linkedin.com/developer/apps">Register</a> your Application with LinkedIn. Get your <b>Client ID</b>(API Key) and <b>Client Secret</b>(Secret Key).<br>
-	Check the appropriate permissions you need for your application. i.e r_basicprofile, r_emailaddress etc.<br>
-	Specify a valid callback url. preferably use 'https'. <br>
+	<li>Check the appropriate permissions you need for your application. i.e <b>r_basicprofile</b>, <b>r_emailaddress etc</b>.
+	Specify a valid callback url. preferably use <b>'https'</b>. <br>
 
-			Use your client ID at line 38, 98 at application/controllers/UserController.php
-			'''		'client_id' => 'YOUR_CLIENT_ID',	'''
-			'''		'client_id' => 'YOUR_CLIENT_ID',	'''
+			Use your client ID at line 38, 98 at application/controllers/UserController.php <br>
+					'client_id' => 'YOUR_CLIENT_ID'	<br>
+					'client_id' => 'YOUR_CLIENT_ID'	<br>
+	</li>
+	
 
-	<br>
+	<li>	Use your client Secret Key at line 99 at zapp/application/controllers/UserController.php <br>
+				'client_secret' => 'YOUR_SECRET_API_KEY' 	
+	</li>
 
-			Use your client Secret Key at line 99 at zapp/application/controllers/UserController.php
-			'''		'client_secret' => 'YOUR_SECRET_API_KEY', 	'''
-
-	<br>
-
-	Also set the proper scope at line 41 according to the permissions specified in your registered LinkedIn app.<br>
-			'''	'scope' => 'r_basicprofile r_emailaddress',		'''
+	<li>	Also set the proper scope at line 41 according to the permissions specified in your registered LinkedIn app.<br>
+				'scope' => 'r_basicprofile r_emailaddress'
+	</li>
+	</ul>
 
 	<h3>Your Virtual host setup:</h3>
 
 	setup  a virtual host and a server name for redirect Url to which linkedin app will return.
-	</p>
+	
 	<VirtualHost *:80>
         ServerName your_custom_server
         DocumentRoot path/to/thisapp/public
@@ -46,9 +48,9 @@
             Allow from all
         </Directory>
     </VirtualHost>
-   <p>
+   
     <h3>Db Setup : </h3>
-   </p>
+   
     * Add databse setting to application.ini (application/configs/application.ini)
 		resources.db.adapter = PDO_MYSQL
 		resources.db.params.host = localhost
@@ -71,7 +73,7 @@
 				email varchar(50),
 				PRIMARY KEY (uid)
 		);
- <p>
+
 	* Also change the redirect_uri at line 46(UserController.php) to the redirect_uri specified at your likedin application.<br>
 	It should be your_custom_server/users/process, where your_custom_server is the server name secified in Virtual Host.
 
